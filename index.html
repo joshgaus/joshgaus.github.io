@@ -3,14 +3,55 @@
     <head>
         <meta charset="utf-8"/>
         <title>Josh Gaus's Portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <h1>Josh Gaus</h1>
-        <h2>Connect with me</h2>
-        <p>
-            <a href="https://www.linkedin.com/in/josh-gaus-ab2696371" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </p>
+        
+        <header>
+            <div class="logo">JG</div>
+            <nav>
+                <ul>
+                    <li><a href="hero">Home</a></li>
+                    <li><a href="projects">Projects</a></li>
+                    <li><a href="about">About</a></li>
+                    <li><a href="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="hero">
+                <h1>Hi, I'm Josh</h1>
+                <p>Georgia Tech electrical engineering student with diverse technical and leadership experience.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </section>
+
+            <section id="projects">
+                <h2>My Work</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3>Lithium-Ion Battery Remaining Useful Life (RUL) Prognostics & Telemetry Node</h3>
+                        <p class="lead">Real-time battery voltage and current data sampling using an STM32 Nucleo board.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet magnam, aperiam perferendis ad eius provident natus consectetur magni nisi veniam, hic itaque totam nobis voluptatem nemo fugit doloremque soluta. Doloribus?</p>
+                    </article>
+                    
+                    <article class="project-card">
+                        <h3>Battery RUL Predictor</h3>
+                        <p class="lead">End-to-end Python machine learning pipeline predicting lithium-ion aging parameters based on derived voltage and temperature features.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id illum hic at quis molestias praesentium ea doloremque repudiandae sunt dolorem deserunt eaque, laborum soluta magni dolores nisi? Autem, corrupti obcaecati?</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="about"></section>
+            <h2>About Me</h2>
+            <h3>Technical</h3>
+            <p>I'm an electrical engineering undergraduate at Georgia Tech pairing signal processing and AI with robotics and autonomous systems.
+
+            </p>
+        </main>
     </body>
 </html>

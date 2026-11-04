@@ -1,10 +1,23 @@
 body {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 0 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #3a3a3a;
-    background-color: #ffffff;
+    color: #163b46;
+    background-color: #fffbf2;
     font-size: clamp(1rem, 2rem, 3rem);
-    line-height:1.2
+    line-height:1.5
+}
+
+a {
+    color: #519872
+}
+
+.card {
+    border: 1px solid #fcf4e3;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fffbf2;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
 }

@@ -3,21 +3,29 @@ body {
     margin: 40px auto;
     padding: 0 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #163b46;
-    background-color: #fffbf2;
+    color: #051E39;
+    background-color: #fff8e3;
     font-size: clamp(1rem, 2rem, 3rem);
     line-height:1.5
 }
 
 a {
-    color: #519872
+    color: #051E39
+}
+
+.responsive-img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;     
 }
 
 .card {
-    border: 1px solid #fcf4e3;
+    border: 1px solid #B39051;
     border-radius: 8px;
     padding: 20px;
-    background-color: #fffbf2;
+    background-color: #fffafa;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
 }

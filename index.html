@@ -42,7 +42,16 @@
                     <article class="card">
                         <h3>Battery RUL Predictor</h3>
                         <p class="lead">End-to-end Python machine learning pipeline predicting lithium-ion aging parameters based on derived voltage and temperature features.</p>
-                        <p>Lorem</p>
+                        <p>This project develops an end-to-end machine learning pipeline to predict the remaining useful life (RUL) of lithium-ion batteries using their initial discharge characteristics. Using the NASA Randomized Battery Usage Dataset, which contains time-series measurements of lithium-ion batteries subjected to randomized charging and discharging cycles, the project investigates how early-cycle electrical and thermal behavior can reveal battery degradation and predict remaining capacity.</p>
+
+                        
+                        <p>The pipeline begins by extracting features from the first five minutes of reference-cycle discharge measurements. These features include cycle count, ohmic internal resistance, dynamic voltage sag, energy discharged in watt-hours, and maximum temperature reached. Together, these measurements capture changes in electrical performance and thermal behavior as batteries age. The prediction target is the total watt-hours discharged over an entire drainage period, serving as a measure of the battery's remaining useful capacity and, consequently, its remaining useful life.</p>
+                        
+                        <p>After feature extraction, the data is standardized and used to train a Random Forest Regressor to estimate remaining useful life. Model performance is evaluated by comparing predictions against actual battery discharge measurements, including validation against a real battery drainage test. This provides an opportunity to assess how well a model trained on historical battery cycling data generalizes to real-world measurements.</p>
+                        
+                        <p>Beyond predictive accuracy, the project uses SHAP (SHapley Additive exPlanations) analysis to investigate the relative importance of individual features and their contributions to model predictions. Particular attention is given to the relationship between early-discharge energy measurements and remaining battery capacity, as well as potential multicollinearity among the extracted features.</p>
+
+                        <p>The ultimate goal is to determine how accurately a battery's remaining useful life can be estimated from just its initial discharge behavior, identify which measurements provide the most predictive information, and evaluate whether a smaller subset of features can achieve comparable accuracy without introducing unnecessary model complexity.</p>
                     </article>
                 </div>
             </section>
@@ -59,9 +68,13 @@
                         <h3>Leadership</h3>
                         <p>I'm an Eagle Scout and I have a breadth of experience in project management, public speaking, and mentorship. For my Eagle Scout project, I benefited 50+ seniors with dementia and children with special needs by leading over a dozen volunteers in constructing 24 custom-made physical therapy lapboards and accompanying shelving units.
                         </p>
-
                         
-
+                        <figure>
+                            <img class="responsive-img" src="Eagle_Project.png" alt="My completed Eagle Scout project.">
+                            <figcaption style="text-align: center; front-style: italic; color: #555; margin-top: 8px;">
+                                My completed Eagle Scout project.
+                            </figcaption>
+                        </figure>
                         <p>
                         I serve as the assistant Freshman social chair at my fraternity, where I've coordinated 3 multi-organization events for a 30-person member class, managing logistics, preparation, and activity execution. I delivered engaging programming, such as structured dance lessons and interactive performance competitions resulting in peak turnouts of 60+ participants. I enjoy public speaking, and I'm especially proud of my high school graduation speech where I spoke to an audience of over 3,000 attendees.
                         </p>
@@ -78,7 +91,7 @@
                                 allowfullscreen>
                             </iframe>
                             <figcaption style="text-align: center; front-style: italic; color: #555; margin-top: 8px;">
-                                A video of my graduation speech from May 2026.
+                                My graduation speech from May 2026.
                             </figcaption>
                         </figure>
                         

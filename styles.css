@@ -47,7 +47,7 @@ header {
 .profile-img {
     width: 260px;
     height: 260px;
-    max-width: 100%; /* Ensures it shrinks on narrow phone screens */
+    max-width: 100%;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #051E39;
@@ -91,7 +91,7 @@ header {
 }
 
 .nav-brand:hover {
-    color: #ffffff; /* Adjusted hover color for clear visibility against navbar background */
+    color: #fffefb;
 }
  
 .nav-links {
@@ -121,20 +121,18 @@ header {
 }
 
 .nav-links a:hover {
-    color: #feffff;
+    color: #fffefb;
 }
 
 a {
     color: #051E39;
 }
 
-/* Responsive embedded iframes (YouTube & Resume PDF viewer) */
 iframe {
     max-width: 100% !important;
     height: auto;
 }
 
-/* Mobile media query for smaller devices */
 @media (max-width: 480px) {
     .navbar {
         padding: 0.75rem 1rem;

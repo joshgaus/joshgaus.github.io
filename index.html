@@ -45,9 +45,9 @@
                     <article class="card">
                         <h3>Battery RUL Predictor</h3>
                         <p class="lead">End-to-end Python machine learning pipeline predicting lithium-ion aging parameters based on derived voltage and temperature features.</p>
+                        
                         <p>This project develops an end-to-end machine learning pipeline to predict the remaining useful life (RUL) of lithium-ion batteries using their initial discharge characteristics. Using the NASA Randomized Battery Usage Dataset, which contains time-series measurements of lithium-ion batteries subjected to randomized charging and discharging cycles, the project investigates how early-cycle electrical and thermal behavior can reveal battery degradation and predict remaining capacity.</p>
 
-                        
                         <p>The pipeline begins by extracting features from the first five minutes of reference-cycle discharge measurements. These features include cycle count, ohmic internal resistance, dynamic voltage sag, energy discharged in watt-hours, and maximum temperature reached. Together, these measurements capture changes in electrical performance and thermal behavior as batteries age. The prediction target is the total watt-hours discharged over an entire drainage period, serving as a measure of the battery's remaining useful capacity and, consequently, its remaining useful life.</p>
                         
                         <p>After feature extraction, the data is standardized and used to train a Random Forest Regressor to estimate remaining useful life. Model performance is evaluated by comparing predictions against actual battery discharge measurements, including validation against a real battery drainage test. This provides an opportunity to assess how well a model trained on historical battery cycling data generalizes to real-world measurements.</p>

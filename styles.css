@@ -18,7 +18,7 @@ header {
     top: 0;
     z-index: 1000;
     width: 100vw;
-    margin-left: calc(50% - 50vw); /* Restores full-page horizontal stretch */
+    margin-left: calc(50% - 50vw);
 }
 
 .responsive-img {
@@ -151,4 +151,16 @@ iframe {
         width: 200px;
         height: 200px;
     }
+}
+
+.lead {
+    font-style: italic;
+}
+
+#resume iframe {
+    height: 750px !important; 
+    width: 100% !important;
+    margin-top: 15px;
+    border-radius: 6px;
+    border: 1px solid rgba(5, 30, 57, 0.1);
 }

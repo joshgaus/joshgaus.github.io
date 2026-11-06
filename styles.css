@@ -9,16 +9,18 @@ body {
     line-height:1.5
 }
 
-a {
-    color: #051E39
-}
-
 .responsive-img {
   max-width: 50%;
   height: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;     
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .card {
@@ -28,4 +30,77 @@ a {
     background-color: #fffafa;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+}
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #051E39;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15)
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 15px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.4rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    color: #f8fafc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
+ 
+.nav-links {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+    list-style: none !important;
+    list-style-type: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    padding: 0.25rem 0.5rem;
+    transition: color 0.15s ease;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+a {
+    color: #051E39
 }

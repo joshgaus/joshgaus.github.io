@@ -13,6 +13,16 @@ body {
     line-height: 1.5;
 }
 
+
+
+p {
+    text-indent: 2em;
+  }
+
+.lead {
+    text-indent: 0em;
+}
+
 header {
     position: sticky;
     top: 0;
@@ -42,6 +52,17 @@ header {
     background-color: #fff5de;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+}
+
+.card h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.card .responsive-img {
+    max-width: 45% !important;
+    height: auto;
+    border-radius: 6px;
 }
 
 .profile-img {
@@ -163,4 +184,11 @@ iframe {
     margin-top: 15px;
     border-radius: 6px;
     border: 1px solid rgba(5, 30, 57, 0.1);
+}
+
+iframe[src*="youtube"] {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9 !important;
+    border-radius: 6px;
 }

@@ -15,8 +15,8 @@
                     <span>Gaus</span>
                 </a>
                 <ul class="nav-links">
-                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#resume">Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -30,33 +30,7 @@
                     <h1>Hi, I'm Josh</h1>
                     <img class="profile-img" src="Josh_Gaus_Headshot.png" alt="Josh Gaus Profile Picture">
                 </div>        
-                <p>Georgia Tech electrical engineering student with hardware prototyping and applied machine learning experience. Proficient in pipeline development from diverse data streams. Eagle Scout with ample project management, public speaking, and leadership experience. Seeking an internship for Summer 2027 in hardware engineering and machine learning.</p>
-            </section>
-
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="grid">
-                    <article class="card">
-                        <h3>Lithium-Ion Battery Remaining Useful Life (RUL) Prognostics & Telemetry Node</h3>
-                        <p class="lead">Real-time battery voltage and current data sampling using an STM32 Nucleo board.</p>
-                        <p>Lorem</p>
-                    </article>
-                    
-                    <article class="card">
-                        <h3>Battery RUL Predictor</h3>
-                        <p class="lead">End-to-end Python machine learning pipeline predicting lithium-ion aging parameters based on derived voltage and temperature features.</p>
-                        
-                        <p>This project develops an end-to-end machine learning pipeline to predict the remaining useful life (RUL) of lithium-ion batteries using their initial discharge characteristics. Using the NASA Randomized Battery Usage Dataset, which contains time-series measurements of lithium-ion batteries subjected to randomized charging and discharging cycles, the project investigates how early-cycle electrical and thermal behavior can reveal battery degradation and predict remaining capacity.</p>
-
-                        <p>The pipeline begins by extracting features from the first five minutes of reference-cycle discharge measurements. These features include cycle count, ohmic internal resistance, dynamic voltage sag, energy discharged in watt-hours, and maximum temperature reached. Together, these measurements capture changes in electrical performance and thermal behavior as batteries age. The prediction target is the total watt-hours discharged over an entire drainage period, serving as a measure of the battery's remaining useful capacity and, consequently, its remaining useful life.</p>
-                        
-                        <p>After feature extraction, the data is standardized and used to train a Random Forest Regressor to estimate remaining useful life. Model performance is evaluated by comparing predictions against actual battery discharge measurements, including validation against a real battery drainage test. This provides an opportunity to assess how well a model trained on historical battery cycling data generalizes to real-world measurements.</p>
-                        
-                        <p>Beyond predictive accuracy, the project uses SHAP (SHapley Additive exPlanations) analysis to investigate the relative importance of individual features and their contributions to model predictions. Particular attention is given to the relationship between early-discharge energy measurements and remaining battery capacity, as well as potential multicollinearity among the extracted features.</p>
-
-                        <p>The ultimate goal is to determine how accurately a battery's remaining useful life can be estimated from just its initial discharge behavior, identify which measurements provide the most predictive information, and evaluate whether a smaller subset of features can achieve comparable accuracy without introducing unnecessary model complexity.</p>
-                    </article>
-                </div>
+                <p style="text-indent: 0px;">Georgia Tech electrical engineering student with hardware prototyping and applied machine learning experience. Proficient in pipeline development from diverse data streams. Eagle Scout with ample project management, public speaking, and leadership experience. Seeking an internship for Summer 2027 in hardware engineering and machine learning.</p>
             </section>
 
             <section id="about">
@@ -64,26 +38,26 @@
                 <div class="grid">
                     <article class="card">
                         <h3>Technical</h3>
-                        <p>I'm an electrical engineering undergraduate at Georgia Tech pairing signal processing and AI with robotics and autonomous systems. I'm focused on gaining experience with embedded microcontrollers such as STM32 and implementing on-device AI. In the future, I'd like to learn more about FPGA programming. I hold an FCC Technician Class Ham Radio License. I have experience working with premier Python data science libraries, including Pandas, NumPy, Scikit-learn, and Tensorflow, and I've constructed full machine learning pipelines for various kinds of data streams, including high-dimensional tabular data and timeseries data. I'm also familiar with C and Java. I'm seeking an internship for Summer 2027 in hardware engineering and machine learning.
+                        <p>I'm an electrical engineering undergraduate at Georgia Tech pairing signal processing and AI with robotics and autonomous systems. I'm focused on gaining experience with embedded microcontrollers such as STM32 and implementing on-device AI. In the future, I'd like to learn more about FPGA programming. I hold an FCC Technician Class Ham Radio License. I have experience working with premier Python data science libraries, including Pandas, NumPy, Scikit-learn, and Tensorflow, and I've constructed full machine learning pipelines for various kinds of data streams, including high-dimensional tabular data and timeseries data. I'm also familiar with C, Java, and HTML/CSS. I'm seeking an internship for Summer 2027 in hardware engineering or machine learning.
                         </p>
                     </article>
                     <article class="card">
                         <h3>Leadership</h3>
-                        <p>I'm an Eagle Scout and I have a breadth of experience in project management, public speaking, and mentorship. For my Eagle Scout project, I benefited 50+ seniors with dementia and children with special needs by leading over a dozen volunteers in constructing 24 custom-made physical therapy lapboards and accompanying shelving units.
+                        <p>I'm an Eagle Scout and I have a breadth of experience in project management, team leadership, and public speaking. For my Eagle Scout service project, I benefited 50+ seniors with dementia and children with special needs by leading over a dozen volunteers in constructing 24 custom-made physical therapy lapboards and accompanying shelving units.
                         </p>
                         
                         <figure>
                             <img class="responsive-img" src="Eagle_Project.png" alt="My completed Eagle Scout project.">
-                            <figcaption style="text-align: center; front-style: italic; color: #555; margin-top: 8px;">
+                            <figcaption style="text-align: center; font-style: italic; color: #555; margin-top: 8px;">
                                 My completed Eagle Scout project.
                             </figcaption>
                         </figure>
 
                         <p>
-                        I serve as the assistant Freshman social chair at my fraternity, where I've coordinated 3 multi-organization events for a 30-person member class, managing logistics, preparation, and activity execution. I delivered engaging programming, such as structured dance lessons and interactive performance competitions resulting in peak turnouts of 60+ participants. I enjoy public speaking, and I'm especially proud of my high school graduation speech where I spoke to an audience of over 3,000 attendees.
+                        I serve as the assistant Freshman social chair at my fraternity. I've coordinated 3 multi-organization events for a 30-person member class, managing logistics, preparation, and activity execution. I deliver engaging programming, including structured dance lessons and interactive performance competitions resulting in peak turnouts of 60+ participants. I enjoy public speaking, and I'm especially proud of my high school graduation speech where I spoke to an audience of over 3,000 attendees.
                         </p>
                         
-                        <figure style="max-width: 560px; margin: 20px auto;">
+                        <figure>
                             <iframe
                                 width="560"
                                 height="315"
@@ -94,23 +68,80 @@
                                 referrerpolicy="strict-origin-when-cross-origin" 
                                 allowfullscreen>
                             </iframe>
-                            <figcaption style="text-align: center; front-style: italic; color: #555; margin-top: 8px;">
+                            <figcaption style="text-align: center; font-style: italic; color: #555; margin-top: 8px;">
                                 My graduation speech from May 2026.
                             </figcaption>
                         </figure>
                         
-                        <p>One of my favorite things to do is mentoring younger members of the organizations I'm a part of. I've spent dozens of days mentoring younger Scouts during camping, backpacking, and hiking trips. I also tutored younger students independently and through my school in geometry, chemistry, and physics.
-                        </p>
+                        <p>One of my favorite things to do is mentor younger members of the organizations I'm part of. In high school, I spent dozens of days mentoring younger Scouts during camping, backpacking, and hiking trips. More recently, I've spent time tutoring students in geometry, chemistry, and physics.</p>
                     </article>
                     <article class="card">
                         <h3>Extracurricular</h3>
 
                         <figure>
-                            <img class="responsive-img" src="Josh_Gaus_Hike.jpeg" alt="Josh Gaus Hiking">
+                            <img class="responsive-img" src="Josh_Gaus_Hike.png" alt="Josh Gaus Hiking">
                         </figure>
 
-                        <p>In my spare time, I enjoy swimming, hiking, and playing pickleball. Soon, I'd like to prioritize more consistently practicing piano and guitar. I love learning about how things work, and one subject I find especially fascinating is music theory. Also, I'm always looking to learn new swing dancing moves!
+                        <p>In my spare time, I love exploring new places, activities, and cuisines. I enjoy hiking, swimming, and playing pickleball. I also recently started swing dancing, so I'm always looking to learn a new move! One topic that fascinates me is music theory, and I'm hoping to get back into playing the piano soon.
                         </p>
+                    </article>
+                    <article class="card">
+                        <h3>Career</h3>
+
+                        <p>I'm still defining my long-term trajectory, but right now I'm most interested in the end-to-end data collection, processing, and analysis pipeline. While I'm eager to gain broad foundational experience across different domains and applications, I'm particularly fascinated by how these techniques intersect with fields like medical imaging and environmental monitoring. I'm especially excited about exploring novel on-device AI techniques to optimize data collection and edge processing.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="grid">
+                    <article class="card">
+                        <h3>Lithium-Ion Battery Remaining Useful Life (RUL) Telemetry Node and ML Predictor (in progress)</h3>
+                        <p class="lead">Real-time battery voltage and current data sampling using an STM32 Nucleo board paired with an end-to-end machine learning pipeline predicting lithium-ion aging parameters based on derived voltage and temperature features.</p>
+                        <p>This project bridges low-level hardware and predictive machine learning to evaluate lithium-ion battery health in real time. I designed an end-to-end battery discharge telemetry system which captures live voltage and current data from lithium-ion cells via an STM32 microcontroller. The discharge characteristics captured by the telemetry node feed into a trained Random Forest regressor model built on the NASA Prognostics Center of Excellence lithium-ion battery aging dataset to predict the remaining useful life of a battery.</p>
+                        <h4>Telemetry Node (in progress)</h4>
+                        <p>Once complete, the STM32 telemetry node will stream live telemetry data to a computer measuring the voltage and current information of a real test cell. Validation of the model and telemetry node will be performed with multiple types of lithium-ion batteries at different points in their lifecycles.</p>
+                        <h4>ML Predictor (in progress)</h4>
+                        <p>The dataset, from NASA's Ames Research Center, contains strictly voltage, current, and temperature timeseries data for reference discharge cycles as the battery ages. Feature extraction must be performed on the raw voltage data to generate features relevant to battery aging, including ohmic internal resistance, dynamic voltage sag, short-duration energy discharged in watt-hours, and maximum temperature reached. Together, these measurements capture changes in electrical performance and thermal behavior as batteries age. The prediction target is the total watt-hours discharged over an entire drainage period, serving as a measure for the battery's remaining useful capacity and consequently, its remaining useful life.</p>
+
+                        <p>After feature extraction, the data is standardized and used to train a Random Forest Regressor to estimate remaining useful life. Model performance is evaluated by comparing predictions against actual battery discharge measurements, including validation against a real battery drainage test. This provides an opportunity to assess how well a model trained on historical battery cycling data generalizes to real-world measurements.</p>
+
+                        <p>Beyond predictive accuracy, the project uses SHAP (SHapley Additive exPlanations) analysis to investigate the relative importance of individual features and their contributions to model predictions. Particular attention is given to the relationship between early-discharge energy measurements and remaining battery capacity, as well as potential multicollinearity among the extracted features.</p>
+
+                        <p>The ultimate goal is to determine how accurately a battery's remaining useful life can be estimated from just its initial discharge behavior, identify which measurements provide the most predictive information, and evaluate whether a smaller subset of features can achieve comparable accuracy without introducing unnecessary model complexity.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Satellite Land-Use Image Classification</h3>
+                        <p class="lead">End-to-end ML pipeline to classify 27,000 satillite imagery samples into distinct land-use categories using a convolutional neural network (CNN) with optimized with early stopping and transfer learning.</p>
+                        <p>This project trains a convolutional neural network to classify satellite imagery into different land use categories. I started by visualizing each image.</p>
+
+                        <figure>
+                            <img class="responsive-img" src="Visualization.png" alt="Grid visualization of different land use types">
+                        </figure>
+                        <figcaption style="text-align: center; font-style: italic; color: #555; margin-top: 8px;">
+                                Visualization of different land use types.
+                            </figcaption>
+
+                        <p>Then, I rescaled the pixel values of each image to fall between 0 and 1 to optimize model training. I designed the model with multiple sets of a 2D convolution, followed by a max pooling layer, followed by a batch normalization layer. The convolutional layer captures patterns in the data, the max pooling layer aggregates the data to reduce computational complexity, and the batch normalization layer accelerates training by standardizing inputs into the next layer.</p>
+                        <p>I trained the model by itself, the model with early stopping to reduce overfitting, and a pretrained transfer learning CNN model paired with an artificial neural network (ANN) to tailor the model to the satellite data specifically. Confusion matrices proved immesely helpful in diagnosing bugs with the models.</p>
+
+                        <figure>
+                            <img class="responsive-img" src="ConfusionMatrix.png" alt="Confusion matrix showing model performance">
+                        </figure>
+                        <figcaption style="text-align: center; font-style: italic; color: #555; margin-top: 8px;">
+                                Confusion matrix showing model performance.
+                            </figcaption>
+
+                        <p>Finally, I plotted the performance of the 3 models for each category against each other, and discovered that the CNN with early stopping performed the best with the least amount of computation required.</p>
+
+                        <figure>
+                            <img class="responsive-img" src="F1Compare.png" alt="F1 Scores comparing model performance">
+                        </figure>
+                        <figcaption style="text-align: center; font-style: italic; color: #555; margin-top: 8px;">
+                                F1 accuracy scores comparing model performance.
+                            </figcaption>
                     </article>
                 </div>
             </section>
@@ -120,7 +151,7 @@
                     <h2>Resume</h2>
                     <article class="card">
                         <a href="Josh_Gaus_Resume_Web.pdf" download="Josh_Gaus_Resume.pdf">Download My Resume</a>
-                        <p>This copy of my resume does not contain personal information as it's posted publicly online. Please email me to receive a more tailored version with my personal information.</p>
+                        <p style="text-indent: 0px">This copy of my resume does not contain personal information as it's posted publicly online. Please email me to receive a more tailored version with my personal information.</p>
                         <iframe
                             src="Josh_Gaus_Resume_Web.pdf" 
                             width="100%"
@@ -131,8 +162,10 @@
                     </article>
                 </div>
             </section>
+
             <section id="contact">
                 <div class="grid">
+                    <h2>Contact</h2>
                     <article class="card">
                         <a href='ma&#105;lto&#58;j%67&#97;%7&#53;%73&#51;&#64;g%61tec&#104;&#46;e%6&#52;u'>&#106;gaus3&#64;gatech&#46;ed&#117;</a>
                         <br>
